@@ -5,6 +5,9 @@
 # ]
 # ///
 
+# Script credit: sventec
+# https://github.com/sventec
+
 """Port of genday.sh to Python, for ,e.g., those on Windows."""
 
 import argparse
@@ -12,6 +15,7 @@ import os
 import sys
 from datetime import datetime
 from pathlib import Path
+from dotenv import load_dotenv
 
 import requests
 
@@ -66,7 +70,8 @@ def main():
     args = parse_args()
     print(f"[-] Generating for {args.year} day {args.day:02d}")
 
-    aoc_session = args.session or os.environ.get("AOC_SESSION")
+    load_dotenv()
+    aoc_session = args.session or os.getenv("AOC_SESSION")
     if not aoc_session:
         print("[!] $AOC_SESSION/--session is not set!")
         print(

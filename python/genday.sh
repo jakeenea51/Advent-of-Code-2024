@@ -3,6 +3,9 @@
 # Original script credit: 0xdf
 # https://twitter.com/0xdf_
 
+# Script credit: sventec
+# https://github.com/sventec
+
 # Usage:
 # Set $AOC_SESSION to AOC session cookie: export AOC_SESSION=<cookie>
 # Then: source genday.sh <day#>
