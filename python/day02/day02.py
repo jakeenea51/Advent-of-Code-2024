@@ -30,38 +30,6 @@ def part2():
     num_safe_reports = 0
     second_chances = []
 
-    # for line in lines:
-    #     safe = True
-    #     increasing = True
-    #     temp_list = list(map(int, line.split()))
-    #     for index, num in enumerate(temp_list):
-    #         if index > 0:
-    #             if index == 1:
-    #                 if num - temp_list[index-1] < 0:
-    #                     increasing = False
-    #                 elif num - temp_list[index-1] == 0:
-    #                     safe = False
-    #             else:
-    #                 if (increasing == True and num - temp_list[index-1] < 0) or (increasing == False and num - temp_list[index-1] > 0):
-    #                     safe = False
-    #             if abs(num - temp_list[index-1]) > 3 or abs(num - temp_list[index-1]) < 1:
-    #                 safe = False
-    #         if safe == False:
-    #             #print(temp_list)
-    #             if index < len(temp_list)-1:
-    #                 if (increasing == True and num - temp_list[index+1] < 0):
-    #                     temp_list.pop(index-1)
-    #                 elif (increasing == False and num - temp_list[index+1] > 0):
-    #                     temp_list.pop(index-1)
-    #             else:
-    #                 temp_list.pop(index)
-    #             #print(temp_list)
-    #             second_chances.append(temp_list)
-    #             break
-    #     if safe == True:
-    #         #print(temp_list)
-    #         num_safe_reports += 1
-
     def valid(line):
         safe = True
         if isinstance(line, str):
