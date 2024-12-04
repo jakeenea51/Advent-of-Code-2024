@@ -4,9 +4,6 @@ input.txt
 # Ignore .env
 .env
 
-# Ignore .editorconfig
-.editorconfig
-
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
