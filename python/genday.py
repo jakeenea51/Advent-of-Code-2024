@@ -118,6 +118,11 @@ def main():
             sys.exit(1)
         script_path.write_text(FILE_TEMPLATE.format(url=url))
 
+    # Add link to README
+    with open("../README.md", "a") as file:
+        file.write(f"\n- [Day {args.day}](./python/day{args.day:02d}/day{args.day:02d}.py)")
+        
+
     print("[+] Complete!")
 
 
