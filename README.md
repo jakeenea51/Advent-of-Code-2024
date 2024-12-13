@@ -12,3 +12,4 @@ Advent of Code 2024 solutions in **Python**.
 - [Day 6](./python/day06/day06.py)
 - [Day 7](./python/day07/day07.py)
 - [Day 8](./python/day08/day08.py)
+- [Day 9](./python/day09/day09.py)
